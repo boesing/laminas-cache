@@ -65,7 +65,8 @@
         "psr/simple-cache-implementation": "1.0"
     },
     "suggest": {
-        "laminas/laminas-serializer": "Laminas\\Serializer component"
+        "laminas/laminas-serializer": "Laminas\\Serializer component",
+        "laminas/laminas-cache-migration": "This component will provide migration tooling for laminas-cache."
     },
     "autoload": {
         "psr-4": {
