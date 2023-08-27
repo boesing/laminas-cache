@@ -207,25 +207,13 @@
     <DocblockTypeContradiction>
       <code>is_array($result)</code>
     </DocblockTypeContradiction>
-    <MissingReturnType>
-      <code>validateKey</code>
-      <code>validateKeys</code>
-      <code>validateStorage</code>
-    </MissingReturnType>
     <MixedAssignment>
-      <code>$cleared</code>
       <code>$key</code>
       <code>$value</code>
       <code>$value</code>
     </MixedAssignment>
-    <UndefinedInterfaceMethod>
-      <code>flush</code>
-    </UndefinedInterfaceMethod>
   </file>
   <file src="src/Psr/SimpleCache/SimpleCacheDecorator.php">
-    <DocblockTypeContradiction>
-      <code>null === $ttl</code>
-    </DocblockTypeContradiction>
     <MixedArgument>
       <code>$key</code>
       <code>$key</code>
@@ -238,10 +226,6 @@
       <code>$results[$key]</code>
       <code>$value</code>
     </MixedAssignment>
-    <PossiblyNullArgument>
-      <code>$ttl</code>
-      <code>$ttl</code>
-    </PossiblyNullArgument>
     <RedundantConditionGivenDocblockType>
       <code><![CDATA[null !== $this->storage->removeItem($key)]]></code>
     </RedundantConditionGivenDocblockType>
@@ -916,7 +900,6 @@
   <file src="test/Psr/CacheItemPool/CacheItemTest.php">
     <InvalidArgument>
       <code><![CDATA['foo']]></code>
-      <code>[]</code>
     </InvalidArgument>
   </file>
   <file src="test/Psr/SimpleCache/SimpleCacheDecoratorTest.php">
@@ -929,22 +912,15 @@
     </DeprecatedMethod>
     <MissingReturnType>
       <code>testHasProxiesToStorage</code>
-      <code>testSetMultipleRaisesExceptionWhenTtlValueIsInvalid</code>
       <code>testSetMultipleShouldRaisePsrInvalidArgumentExceptionForInvalidKeys</code>
       <code>testSetMultipleShouldRemoveItemsFromCacheIfTtlIsBelow1</code>
       <code>testSetMultipleShouldRemoveItemsFromCacheIfTtlIsBelow1AndStorageDoesNotSupportPerItemTtl</code>
-      <code>testSetRaisesExceptionWhenTtlValueIsInvalid</code>
       <code>testSetShouldAcknowledgeStorageAdapterMaxKeyLengthWithPsrDecorator</code>
       <code>testSetShouldRaisePsrInvalidArgumentExceptionForInvalidKeys</code>
       <code>testSetShouldRemoveItemFromCacheIfTtlIsBelow1</code>
       <code>testSetShouldRemoveItemFromCacheIfTtlIsBelow1AndStorageDoesNotSupportPerItemTtl</code>
     </MissingReturnType>
-    <MixedArgument>
-      <code>$ttl</code>
-      <code>$ttl</code>
-    </MixedArgument>
     <MixedInferredReturnType>
-      <code>array</code>
       <code>array</code>
       <code>array</code>
     </MixedInferredReturnType>
