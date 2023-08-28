@@ -734,12 +734,7 @@
     </PossiblyNullOperand>
   </file>
   <file src="src/Storage/PluginManager.php">
-    <MixedReturnStatement>
-      <code>$plugin</code>
-    </MixedReturnStatement>
     <NonInvariantDocblockPropertyType>
-      <code>$aliases</code>
-      <code>$factories</code>
       <code>$instanceOf</code>
     </NonInvariantDocblockPropertyType>
   </file>
@@ -1045,7 +1040,6 @@
   <file src="test/Storage/AdapterPluginManagerTest.php">
     <MissingReturnType>
       <code>testPluginAliasesResolve</code>
-      <code>testShareByDefaultAndSharedByDefault</code>
     </MissingReturnType>
   </file>
   <file src="test/Storage/CapabilitiesTest.php">
@@ -1187,11 +1181,6 @@
       <code>onReadItemPost</code>
       <code>onReadItemsPost</code>
     </UndefinedInterfaceMethod>
-  </file>
-  <file src="test/Storage/PluginManagerTest.php">
-    <MissingReturnType>
-      <code>testShareByDefaultAndSharedByDefault</code>
-    </MissingReturnType>
   </file>
   <file src="test/Storage/TestAsset/ClearExpiredMockAdapter.php">
     <InvalidReturnType>

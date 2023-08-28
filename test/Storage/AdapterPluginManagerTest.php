@@ -34,19 +34,9 @@ class AdapterPluginManagerTest extends TestCase
         $this->addToAssertionCount(1);
     }
 
-    protected static function getPluginManager(): AdapterPluginManager
+    protected static function getPluginManager(array $config = []): AdapterPluginManager
     {
-        return new AdapterPluginManager(new ServiceManager());
-    }
-
-    public function testShareByDefaultAndSharedByDefault()
-    {
-        self::markTestSkipped('Support for servicemanager v2 is dropped.');
-    }
-
-    protected function getV2InvalidPluginException()
-    {
-        self::fail('Somehow, servicemanager v2 compatibility is being tested.');
+        return new AdapterPluginManager(new ServiceManager(), $config);
     }
 
     protected function getInstanceOf(): string
